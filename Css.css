@@ -1,0 +1,227 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+p {
+	background-color: none;
+	font-size: 50%;
+	margin : 30px;
+}
+
+header{
+	background-color: black;
+}
+body {
+	background-size: 110%;
+	color: white;
+	font-size: 150%;
+	margin: 0px;
+	color: #d9fc8d;
+	
+	
+}
+nav{
+	width: 100%;
+	background-color: #383838;
+	padding: 5px;
+}
+
+h1 {
+	text-align: center;
+	margin: 0px ;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none ;
+	
+}
+li{
+	display: inline-block;
+	width : 15%;
+	text-align: center;
+	font-size: 90%;
+}
+
+a{
+	color: #d9fc8d;
+
+}
+
+a:hover{
+	color: lime;
+	transition: .4s;
+}
+
+a:active{
+	color: cyan;
+}
+
+.active{
+	background-color: gray;
+}
+
+.show-button , .hide-button{
+	float: right;
+	display: none;
+}
+
+#chk{
+	position: absolute;
+	visibility: hidden;
+	z-index: -400;
+}
+
+nav div{
+	display: none;
+}
+/* Article Css */
+
+article {
+	max-width: 100%;
+	border-style: solid;
+	margin: 5px auto auto auto;
+	padding: 10px;
+	background-color: #fcd695;
+	color: black;
+}
+
+h2 , h3 {
+	padding-left: 3.5%;
+}
+
+article p {
+	padding-left: 1.7%;
+	font-size: 85%;
+}
+
+article a{
+	color: #3f6aeb;
+}
+
+article a:hover {
+	color: #7300a1;
+}
+
+article img{
+	padding-left: 3.7%;
+	width: 800px;
+	border-radius: 5%;
+}
+
+div p{
+	margin-top: 0px;
+	margin-left: 14px;
+}
+.img-container{
+	width: 800px;
+	padding-left: 2%;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 80%;
+}
+
+footer div{
+	color: #d9fc8d;
+}
+footer a{
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #4a81f0;
+}
+
+/* mobile view */
+
+@media (max-width: 800px)
+{
+
+body {
+	background: #ebcc98; 
+	background-size: 110%;
+	color: white;
+	font-size: 150%;
+	margin: 0px;
+	color: #f2ffd9;
+	}
+	.show-button, .hide-button{
+		display: block;
+		padding-right: 8px;
+		padding-top: 10px;
+	}
+
+	.hide-button{
+		display: none;
+	}
+header{
+	background-color: black;
+	padding: 20px 0 0px 0px;
+}
+header p{
+	display: none;
+}
+
+
+nav{
+	padding: 0 0 40px 0;
+	background-color: black;
+}
+
+nav div{
+	display: inline;
+	margin-top: 20px;
+
+}
+ .menu{
+	position: fixed;
+	top: 110px;
+	right: -300%;
+
+ }
+#chk:checked ~ .menu {
+	right: 0% ;
+	transition: .5s;
+}
+.menu{
+	background: black;
+	width: 50%;
+}
+
+.menu li{
+ 	display: block;
+ 	padding: 15px 0px 15px 5px ;
+
+ }
+
+ p{
+ 	color: black;
+ }
+
+ .active{
+	background-color: black;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 80%;
+}
+/* Mobile View article*/
+
+article img, .img-container{
+	width: 95%;
+	padding: 0 1% 0 10px;
+
+}
+
+}
